@@ -1,0 +1,45 @@
+.grid-container {
+    background: url("/img/cover.jpg");
+    /*- Genrate a block-level grid -*/
+    display: grid;
+    /*- Grid Size -*/
+    width: 100vw;
+    height: 100vh;
+    /*- Define grid's columns and rows -*/
+    grid-template-columns: 25% auto 25%;
+    grid-template-rows: 25% auto 25%;
+    /*- Set grid line size -*/
+    grid-gap: 10px 10px;
+    /*- Center Grid items -*/
+    place-items: center;
+    justify-content: center;
+    /*- auto place items in rows -*/
+    grid-auto-flow: row;
+}
+
+.header-logo {
+    /*- Grid Item Column Location -*/
+    grid-column: 1/2;
+    /*- Grid Item Row Location -*/
+    grid-row: 1/2;
+    /*- Aligns a grid item inside a cell along the row axis  -*/
+    justify-self: center;
+    /*- Aligns a grid item inside a cell along the column axis  -*/
+    align-self: center;
+}
+
+.logo {
+    max-width: 150px;
+    max-height: 50px;
+}
+
+.header-menu{
+    /*- Grid Item Column Location -*/
+    grid-column: 3/4;
+    /*- Grid Item Row Location -*/
+    grid-row: 1/2;
+    /*- Aligns a grid item inside a cell along the row axis  -*/
+    justify-self: center;
+    /*- Aligns a grid item inside a cell along the column axis  -*/
+    align-self: center;
+}
